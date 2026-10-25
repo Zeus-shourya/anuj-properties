@@ -1,0 +1,83 @@
+<!--page
+{
+  "title": "Property Valuation & Price Guidance in Sonipat",
+  "description": "What is your plot, house or shop in Sonipat worth? Get a realistic price or rent range from a local dealer, and see how collector rates fit in.",
+  "path": "/property-valuation-sonipat/",
+  "nav": "services",
+  "crumbs": [["Services", "/services/"], ["Valuation & price guidance"]],
+  "service": { "name": "Property price guidance and market valuation", "type": "Real estate appraisal", "areas": ["Parsvnath City, Sonipat", "Omaxe City, Sonipat", "Sonipat"] },
+  "waText": "Hi Anuj Properties, I'd like a price opinion for my property.",
+  "form": { "intent": "Sell", "type": "Residential plot", "heading": "Ask for a price opinion", "sub": "Tell us the property type, area and size. Add the block or plot number in the note.", "submit": "Send on WhatsApp" },
+  "faqs": [
+    ["Is your price opinion accepted by banks or courts?", "<p>No. Our price opinion is a market view from a property dealer, meant to help you set an asking price or rent. Banks, courts and tax authorities rely on formal valuation reports from registered valuers.</p>"],
+    ["Why is the market price different from the collector rate?", "<p>The collector rate is the minimum value the government sets for each area, for charging stamp duty. Market prices depend on the exact plot or house (corner or park-facing, condition, block) and on demand, so they can be well above the collector rate, and occasionally close to it. Stamp duty is charged on whichever is higher: the deed value or the collector-rate value.</p>"],
+    ["What do you need from me for a price opinion?", "<p>The location (township, block and plot or house number), the size, the facing, and for built property the number of floors, the age of construction and a few photos. If the documents are in order and the dues are clear, tell us. It affects what buyers will pay.</p>"],
+    ["Can you also suggest the rent for my property?", "<p>Yes. We compare it with similar houses, floors, flats or shops currently let out nearby and suggest a realistic monthly rent and deposit.</p>"]
+  ]
+}
+-->
+<section class="page-hero plotgrid" aria-labelledby="page-title">
+  <svg class="page-hero__art" viewBox="0 0 640 520" aria-hidden="true"><use href="#art-plan-base"/></svg>
+  <div class="container">
+    {{breadcrumbs}}
+    <p class="eyebrow">Valuation</p>
+    <h1 id="page-title" class="long">Property valuation and price guidance in Sonipat</h1>
+    <p class="lead">Before you sell or let out, know what your plot, house or shop should realistically fetch. We base the range on what similar properties nearby are asking and closing at.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="{{waPage}}" data-track="whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Ask for a price opinion</a>
+      <a class="btn btn--call" href="{{tel}}" data-track="call"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call {{phone}}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container layout">
+    <div class="prose">
+      <p class="note mt-0"><strong>Price opinion, not a certified valuation.</strong> We give you a market view to help set an asking price or rent. If a bank, court or tax authority needs a formal valuation report, that has to come from a registered valuer.</p>
+
+      <h2>What sets the price of a property here</h2>
+      <ul>
+        <li><strong>Location within the township:</strong> the block, how developed and lived-in it is, and what is next to it.</li>
+        <li><strong>The plot itself:</strong> size, shape, facing, corner or park-facing position, and road width.</li>
+        <li><strong>The building:</strong> age, quality of construction, number of floors, and whether it matches the approved plan.</li>
+        <li><strong>Paperwork:</strong> clear title, dues paid, and transfers in order. Buyers pay more for a property that can be registered without delay.</li>
+        <li><strong>The market right now:</strong> how many similar properties are for sale, and how quickly they are selling.</li>
+      </ul>
+
+      <h2>How we work out the range</h2>
+      <ol>
+        <li>We note your property's details and, where useful, see it in person.</li>
+        <li>We compare it with similar properties in the same township and block: what they are asking now, and what recent deals have closed at.</li>
+        <li>We adjust for what makes yours better or worse: corner, park, facing, condition, approvals.</li>
+        <li>We give you a realistic asking range, and tell you what buyers or tenants are likely to negotiate.</li>
+      </ol>
+
+      <h2>Collector rate vs market price</h2>
+      <p>The <strong>collector rate</strong> is the minimum value the district administration sets for property in each area, used for stamp duty. A property can't be registered at less than its collector-rate value. Sonipat's 2026–27 collector rates came into force on 1 April 2026, with increases of up to 75% in some areas, and since 1 August 2026 Haryana's urban property tax is also worked out from collector rates.</p>
+      <p>The market price is what a buyer will actually pay, and in established townships it is often above the collector rate. Our guide on <a href="/guides/collector-rates-sonipat/">collector rates in Sonipat</a> explains where to look up the official rate for your area.</p>
+
+      <h2>After the price opinion</h2>
+      <p>If you decide to go ahead, we'll show your property to buyers already looking in that area, screen enquiries, and help with the paperwork through to registration. If you'd rather let it out, see <a href="/property-for-rent-sonipat/#owners">renting out your property</a>.</p>
+
+      <h2>Questions about valuation</h2>
+      {{faqs}}
+    </div>
+    <div class="layout__aside">
+      {{> enquiry}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--white section--tight" aria-labelledby="related-title">
+  <div class="container">
+    <h2 id="related-title" class="h3">Related pages</h2>
+    <ul class="related related--grid mt-s">
+      <li><a href="/guides/collector-rates-sonipat/"><span>Collector rates in Sonipat<small>What they are, where to check</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="/plots-in-sonipat/"><span>Selling a plot<small>What changes a plot's price</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="/property-documentation-sonipat/"><span>Documentation support<small>Get your papers ready to sell</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      <li><a href="/guides/stamp-duty-registration-charges-haryana/"><span>Stamp duty in Haryana<small>What your buyer will pay</small></span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+    </ul>
+  </div>
+</section>
+
+{{> cta}}

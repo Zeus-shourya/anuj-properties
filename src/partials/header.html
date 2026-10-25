@@ -1,0 +1,62 @@
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__item"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>{{hours}}</p>
+    <p class="topbar__item"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>{{addressShort}}, Sonipat</p>
+    <p class="topbar__item topbar__item--end"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="{{tel}}" data-track="call">{{phoneIntl}}</a></p>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container header__inner">
+    <a class="brand" href="/">
+      <svg class="brand__mark" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand__text"><span class="brand__name">Anuj Properties</span><span class="brand__meta">Since 1998 · Sonipat</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-panel">
+        <svg class="i i-menu" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-close"/></svg><span>Menu</span>
+      </button>
+      <div class="nav__panel" id="nav-panel">
+        <ul class="nav__list">
+          <li class="nav__item{{navcur:services}}">
+            <div class="nav__row">
+              <a class="nav__link" href="/services/">Services</a>
+              <button class="nav__sub-toggle" type="button" aria-expanded="false" aria-controls="sub-services"><span class="sr-only">Show service pages</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+            </div>
+            <ul class="nav__sub" id="sub-services">
+              <li><a href="/plots-in-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-plot"/></svg><span>Residential plots<small>Corner, park-facing and regular plots</small></span></a></li>
+              <li><a href="/homes-in-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-home"/></svg><span>Kothis, floors &amp; flats<small>Independent houses, builder floors, apartments</small></span></a></li>
+              <li><a href="/farmhouses-in-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-farm"/></svg><span>Farmhouses &amp; farm land<small>Weekend homes and land around Sonipat</small></span></a></li>
+              <li><a href="/commercial-property-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-shop"/></svg><span>Shops, showrooms &amp; offices<small>Buy, sell or lease commercial space</small></span></a></li>
+              <li><a href="/property-for-rent-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-key"/></svg><span>Rent &amp; leasing<small>For tenants and for owners letting out</small></span></a></li>
+              <li><a href="/property-valuation-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-tag"/></svg><span>Valuation &amp; price guidance<small>Know what your property should fetch</small></span></a></li>
+              <li><a href="/property-documentation-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-doc"/></svg><span>Documentation support<small>Title checks, transfer, registration</small></span></a></li>
+              <li><a href="/services/"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg><span>All services<small>How we work, start to finish</small></span></a></li>
+            </ul>
+          </li>
+          <li class="nav__item{{navcur:areas}}">
+            <div class="nav__row">
+              <a class="nav__link" href="/#areas">Areas</a>
+              <button class="nav__sub-toggle" type="button" aria-expanded="false" aria-controls="sub-areas"><span class="sr-only">Show area pages</span><svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+            </div>
+            <ul class="nav__sub nav__sub--narrow" id="sub-areas">
+              <li><a href="/parsvnath-city-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span>Parsvnath City, Sonipat<small>Sector 8 – where our office is</small></span></a></li>
+              <li><a href="/omaxe-city-sonipat/"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span>Omaxe City, Sonipat<small>Plots, villas, floors and flats</small></span></a></li>
+            </ul>
+          </li>
+          <li class="nav__item{{navcur:guides}}"><div class="nav__row"><a class="nav__link" href="/guides/">Guides</a></div></li>
+          <li class="nav__item{{navcur:about}}"><div class="nav__row"><a class="nav__link" href="/about/">About</a></div></li>
+          <li class="nav__item{{navcur:contact}}"><div class="nav__row"><a class="nav__link" href="/contact/">Contact</a></div></li>
+        </ul>
+        <div class="nav__cta">
+          <a class="btn btn--wa" href="{{waPage}}" data-track="whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp us</a>
+          <a class="btn btn--call" href="{{tel}}" data-track="call"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Call {{phone}}</a>
+          <p class="small muted center">{{hours}}</p>
+        </div>
+      </div>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn--wa btn--sm" href="{{waPage}}" data-track="whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+      <a class="btn btn--call btn--sm" href="{{tel}}" data-track="call"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span>Call<span class="btn__long"> {{phone}}</span></span></a>
+    </div>
+  </div>
+</header>

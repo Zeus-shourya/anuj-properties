@@ -1,0 +1,54 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/">
+          <svg class="brand__mark" aria-hidden="true"><use href="#logo"/></svg>
+          <span class="brand__text"><span class="brand__name">Anuj Properties</span><span class="brand__meta">{{tagline}} · Since 1998</span></span>
+        </a>
+        <p>Real estate consultant in Parsvnath City, Sector 8, Sonipat. We help people buy, sell and rent plots, homes, farmhouses and commercial property, and see the paperwork through.</p>
+        <span class="footer__hi" lang="hi">{{hindiName}}, सोनीपत</span>
+        <a class="footer__rating" href="{{reviewsUrl}}"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg>{{rating}} on Google · {{reviewCount}} reviews</a>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <ul class="footer__links">
+          <li><a href="/plots-in-sonipat/">Residential plots</a></li>
+          <li><a href="/homes-in-sonipat/">Kothis, builder floors &amp; flats</a></li>
+          <li><a href="/farmhouses-in-sonipat/">Farmhouses &amp; farm land</a></li>
+          <li><a href="/commercial-property-sonipat/">Shops, showrooms &amp; offices</a></li>
+          <li><a href="/property-for-rent-sonipat/">Rent &amp; leasing</a></li>
+          <li><a href="/property-valuation-sonipat/">Valuation &amp; price guidance</a></li>
+          <li><a href="/property-documentation-sonipat/">Documentation support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Areas &amp; guides</h2>
+        <ul class="footer__links">
+          <li><a href="/parsvnath-city-sonipat/">Parsvnath City, Sonipat</a></li>
+          <li><a href="/omaxe-city-sonipat/">Omaxe City, Sonipat</a></li>
+          <li><a href="/guides/">Property guides</a></li>
+          {{#if listings}}<li><a href="/properties/">Available properties</a></li>{{/if}}
+          <li><a href="/about/">About us</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__nap">
+        <h2>Visit or call</h2>
+        <address><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span>Anuj Properties<br>{{street}},<br>Sonipat, Haryana {{postalCode}}</span></address>
+        <p><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="{{tel}}" data-track="call">{{phoneIntl}}</a></p>
+        <p><svg class="i" aria-hidden="true" style="fill:currentColor;stroke:none"><use href="#i-whatsapp"/></svg><a href="{{waPage}}" data-track="whatsapp">WhatsApp us</a></p>
+        <p><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><span>{{hours}}</span></p>
+        <p><svg class="i" aria-hidden="true"><use href="#i-route"/></svg><a href="{{directionsUrl}}">Get directions</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© {{year}} Anuj Properties, Sonipat. Dealing in Sonipat property since 1998.</p>
+      <ul>
+        <li><a href="/privacy-policy/">Privacy policy</a></li>
+        <li><a href="/terms/">Terms of use</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

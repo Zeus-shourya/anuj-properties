@@ -1,0 +1,96 @@
+<!--page
+{
+  "title": "About Anuj Properties | Sonipat Property Dealer Since 1998",
+  "description": "Anuj Properties is a real estate consultant in A Block, Parsvnath City, Sector 8, Sonipat, dealing in plots, homes and commercial property since 1998.",
+  "path": "/about/",
+  "nav": "about",
+  "pageType": "about",
+  "crumbs": [["About us"]],
+  "waText": "Hi Anuj Properties, I'd like to talk to you about a property."
+}
+-->
+<section class="page-hero plotgrid" aria-labelledby="page-title">
+  <div class="container">
+    {{breadcrumbs}}
+    <div class="page-hero__grid page-hero__grid--media">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h1 id="page-title">About Anuj Properties</h1>
+        <p class="lead">A Sonipat real estate office that has been in business since 1998, working today from A Block in Parsvnath City, Sector 8.</p>
+        <div class="btn-row">
+          <a class="btn btn--wa" href="{{waPage}}" data-track="whatsapp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp us</a>
+          <a class="btn btn--ghost" href="#office">See our office</a>
+        </div>
+      </div>
+      <div class="page-hero__media">
+        {{photo name="office-lounge" alt="Reception lounge inside the Anuj Properties office, with a leather sofa set and marble floor" sizes="(min-width: 960px) 480px, 100vw" eager}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="story-title">
+  <div class="container split split--wide-left">
+    <div class="prose">
+      <h2 id="story-title" class="mt-0">In Sonipat property since 1998</h2>
+      <p>Anuj Properties has been dealing in Sonipat property since 1998, the year written on the board outside our office. We work from the ground floor of Plot No. 449A in A Block, Parsvnath City, Sector 8, inside one of the two townships we know best.</p>
+      <p>Our focus is simple. We deal in all kinds of property in <a href="/parsvnath-city-sonipat/">Parsvnath City</a> and <a href="/omaxe-city-sonipat/">Omaxe City</a>, and we help clients across Sonipat buy, sell and rent plots, independent houses, builder floors, flats, farmhouses and commercial space.</p>
+      <p>The line on the wall of our reception says <strong>“Proficiency in Real Estate”</strong>. For us that means knowing the local market well and seeing each deal through its paperwork, not just the handshake.</p>
+      <h3>What we can help with</h3>
+      <ul class="checklist">
+        <li>Finding and comparing <a href="/plots-in-sonipat/">residential plots</a>, <a href="/homes-in-sonipat/">kothis, builder floors and flats</a>, and <a href="/farmhouses-in-sonipat/">farmhouses</a></li>
+        <li>Buying, selling and leasing <a href="/commercial-property-sonipat/">shops, showrooms and offices</a></li>
+        <li><a href="/property-for-rent-sonipat/">Renting</a> a home or shop, or finding a tenant for yours</li>
+        <li><a href="/property-valuation-sonipat/">Price guidance</a> before you sell or rent out</li>
+        <li><a href="/property-documentation-sonipat/">Documentation</a>: title checks, developer transfer, registration and mutation</li>
+      </ul>
+    </div>
+    <aside class="panel" aria-labelledby="facts-title">
+      <h2 id="facts-title" class="panel__title">Business details</h2>
+      <dl class="kv">
+        <div><dt>Name</dt><dd>Anuj Properties <span lang="hi">({{hindiName}})</span></dd></div>
+        <div><dt>In business since</dt><dd>1998</dd></div>
+        <div><dt>Type</dt><dd>Real estate consultant and property dealer</dd></div>
+        <div><dt>Office</dt><dd>{{street}}, Sonipat, Haryana {{postalCode}}</dd></div>
+        <div><dt>Hours</dt><dd>{{hours}}</dd></div>
+        <div><dt>Phone / WhatsApp</dt><dd><a href="{{tel}}" data-track="call">{{phoneIntl}}</a></dd></div>
+        <div><dt>Google rating</dt><dd><a href="{{reviewsUrl}}">{{rating}} from {{reviewCount}} reviews</a></dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--sand" id="office" aria-labelledby="office-title">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">Our office</p>
+      <h2 id="office-title">Come and meet us in Parsvnath City</h2>
+      <p>Talk through your requirement in person, go over documents in the meeting room, and head out for site visits from here.</p>
+    </div>
+    <div class="gallery">
+      <figure>{{photo name="office-front" alt="Anuj Properties office front with the blue signboard and the A-449 Parsvnath City Sector 8 house plate" sizes="(min-width: 1100px) 560px, (min-width: 640px) 48vw, 100vw"}}<figcaption>The office front at A-449, Parsvnath City</figcaption></figure>
+      <figure>{{photo name="office-meeting" alt="Meeting room with a long table and eight black chairs at the Anuj Properties office" sizes="(min-width: 1100px) 560px, (min-width: 640px) 48vw, 100vw"}}<figcaption>Meeting room</figcaption></figure>
+    </div>
+    <div class="section__foot">
+      <a class="btn btn--call" href="{{directionsUrl}}"><svg class="i" aria-hidden="true"><use href="#i-route"/></svg>Get directions</a>
+      <span class="muted">{{hours}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="section__head">
+      <p class="eyebrow">Reviews</p>
+      <h2 id="reviews-title">Rated {{rating}} on Google</h2>
+      <p>From {{reviewCount}} reviews on our Google Business Profile. A few of them:</p>
+    </div>
+    {{reviews:3}}
+    <div class="section__foot">
+      <a class="textlink" href="{{reviewsUrl}}">Read all reviews on Google <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="textlink" href="{{writeReviewUrl}}">Write a review <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+{{> cta}}

@@ -1,0 +1,44 @@
+{
+  "name": "Anuj Properties",
+  "hindiName": "अनुज प्रोपर्टीज",
+  "tagline": "Proficiency in Real Estate",
+  "since": 1998,
+  "description": "Real estate consultant in Parsvnath City, Sector 8, Sonipat, dealing in plots, kothis, builder floors, flats, farmhouses and commercial property since 1998.",
+
+  "baseUrl": "https://zeus-shourya.github.io/anuj-properties/",
+  "customDomain": "",
+
+  "phone": { "display": "98134 41130", "intl": "+91 98134 41130", "e164": "+919813441130" },
+  "whatsapp": "919813441130",
+  "email": "",
+
+  "address": {
+    "street": "Ground Floor, A Block, Parsvnath City, Plot No. 449A, Sector 8",
+    "short": "Plot 449A, A Block, Parsvnath City, Sector 8",
+    "locality": "Sonipat",
+    "region": "Haryana",
+    "regionCode": "HR",
+    "postalCode": "131001",
+    "country": "IN"
+  },
+  "geo": { "lat": 28.9945519, "lng": 77.0784672 },
+  "plusCode": "X3VH+R9 Sonipat, Haryana",
+  "hours": { "opens": "10:30", "closes": "19:30", "display": "Open daily, 10:30 am – 7:30 pm", "short": "Daily 10:30 am – 7:30 pm" },
+
+  "google": {
+    "placeId": "ChIJyxqH78GxDTkRtuaTY3t34ic",
+    "cid": "2873990884051117750",
+    "rating": "5.0",
+    "reviewCount": 21,
+    "ratingAsOf": "October 2026"
+  },
+  "sameAs": [
+    "https://www.google.com/maps?cid=2873990884051117750",
+    "https://www.realestateindia.com/profile/anuj-properties-in-sector-8-sonipat-2622876/"
+  ],
+
+  "ga4Id": "",
+  "formEndpoint": "",
+  "formAccessKey": "",
+  "inlineCss": true
+}

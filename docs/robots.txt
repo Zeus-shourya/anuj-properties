@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zeus-shourya.github.io/anuj-properties/sitemap.xml

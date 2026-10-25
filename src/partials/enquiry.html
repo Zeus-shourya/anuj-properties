@@ -1,0 +1,62 @@
+<div class="panel" id="enquire">
+  <h2 class="panel__title">{{form.heading}}</h2>
+  <p class="panel__sub">{{form.sub}}</p>
+  <form class="enquiry" data-enquiry action="{{wa}}" method="get" novalidate data-intent="{{form.intent}}" data-type="{{form.type}}" data-area="{{form.area}}"{{#if endpoint}} data-endpoint="{{formEndpoint}}" data-key="{{formAccessKey}}"{{/if}}>
+    <fieldset class="seg">
+      <legend class="legend">I want to</legend>
+      <div class="seg__opts">
+        <input type="radio" name="intent" id="intent-buy" value="Buy" checked><label for="intent-buy">Buy</label>
+        <input type="radio" name="intent" id="intent-rent" value="Rent"><label for="intent-rent">Rent</label>
+        <input type="radio" name="intent" id="intent-sell" value="Sell"><label for="intent-sell">Sell</label>
+        <input type="radio" name="intent" id="intent-let" value="Rent out"><label for="intent-let">Rent out</label>
+      </div>
+    </fieldset>
+    <div class="enquiry__row">
+      <div class="field">
+        <label for="f-type">Property type</label>
+        <select class="select" id="f-type" name="type">
+          <option>Residential plot</option>
+          <option>Independent house / kothi</option>
+          <option>Builder floor</option>
+          <option>Flat / apartment</option>
+          <option>Farmhouse / farm land</option>
+          <option>Shop / showroom</option>
+          <option>Office space</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-area">Area</label>
+        <select class="select" id="f-area" name="area">
+          <option>Parsvnath City</option>
+          <option>Omaxe City</option>
+          <option>Anywhere in Sonipat</option>
+        </select>
+      </div>
+    </div>
+    <div class="field">
+      <label for="f-budget">Budget <span class="opt">(optional)</span></label>
+      <input class="input" id="f-budget" name="budget" type="text" autocomplete="off" placeholder="e.g. ₹60 lakh, or ₹15,000 a month">
+    </div>
+    <div class="enquiry__row">
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input class="input" id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+        <p class="field__error" id="f-name-err" hidden></p>
+      </div>
+      <div class="field">
+        <label for="f-phone">Mobile number</label>
+        <input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="10-digit mobile" aria-describedby="f-phone-err">
+        <p class="field__error" id="f-phone-err" hidden></p>
+      </div>
+    </div>
+    <div class="field">
+      <label for="f-msg">Anything else? <span class="opt">(optional)</span></label>
+      <textarea class="textarea" id="f-msg" name="text" rows="3" placeholder="Size, facing, block, when you want to move…"></textarea>
+    </div>
+    <div class="hp" aria-hidden="true"><label for="f-company">Company</label><input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+    <button class="btn btn--wa btn--block" type="submit"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span data-label>{{form.submit}}</span></button>
+    <p class="enquiry__note">{{#if !endpoint}}This opens WhatsApp with your details filled in. Just tap send.{{/if}}{{#if endpoint}}Your enquiry comes straight to our office, and you can also send it on WhatsApp.{{/if}} Prefer to talk? Call <a href="{{tel}}" data-track="call">{{phone}}</a>. We only use these details to reply to you (<a href="/privacy-policy/">privacy policy</a>).</p>
+    <div class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+  </form>
+</div>

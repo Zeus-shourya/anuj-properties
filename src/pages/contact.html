@@ -1,0 +1,101 @@
+<!--page
+{
+  "title": "Contact Anuj Properties | Call or WhatsApp 98134 41130",
+  "description": "Call or WhatsApp 98134 41130, or visit Anuj Properties at Plot 449A, A Block, Parsvnath City, Sector 8, Sonipat. Open daily, 10:30 am to 7:30 pm.",
+  "path": "/contact/",
+  "nav": "contact",
+  "pageType": "contact",
+  "crumbs": [["Contact"]],
+  "form": { "heading": "Send us an enquiry", "sub": "Fill in what you can. It opens WhatsApp with everything typed out for you." }
+}
+-->
+<section class="page-hero plotgrid" aria-labelledby="page-title">
+  <div class="container">
+    {{breadcrumbs}}
+    <p class="eyebrow">Contact</p>
+    <h1 id="page-title">Contact Anuj Properties</h1>
+    <p class="lead">Call, WhatsApp or drop in. We're in A Block, Parsvnath City, Sector 8, Sonipat, and open every day from 10:30 am to 7:30 pm.</p>
+  </div>
+</section>
+
+<section class="section section--tight" aria-label="Ways to reach us">
+  <div class="container">
+    <div class="contact-cards">
+      <a class="contact-card" href="{{tel}}" data-track="call">
+        <span class="tile__icon"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span class="contact-card__label">Call</span>
+        <strong>{{phoneIntl}}</strong>
+        <span class="muted small">{{hoursShort}}</span>
+      </a>
+      <a class="contact-card" href="{{wa:Hi Anuj Properties, I have a property enquiry.}}" data-track="whatsapp">
+        <span class="tile__icon tile__icon--wa"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+        <span class="contact-card__label">WhatsApp</span>
+        <strong>{{phone}}</strong>
+        <span class="muted small">Send photos, documents or a location pin</span>
+      </a>
+      <a class="contact-card" href="{{directionsUrl}}">
+        <span class="tile__icon"><svg class="i" aria-hidden="true"><use href="#i-route"/></svg></span>
+        <span class="contact-card__label">Visit</span>
+        <strong>Plot 449A, A Block, Parsvnath City</strong>
+        <span class="muted small">Sector 8, Sonipat 131001 · Get directions</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="find-title">
+  <div class="container layout">
+    <div>
+      <h2 id="find-title">Finding our office</h2>
+      <div class="prose mt-s">
+        <p>We're on the ground floor of <strong>Plot No. 449A, A Block, Parsvnath City, Sector 8</strong>. Look for the blue <strong>Anuj Properties</strong> signboard over the gate and the <strong>A-449</strong> house plate beside it.</p>
+        <p>On Google Maps, search for “Anuj Properties Parsvnath City” or use the Plus Code <strong>{{plusCode}}</strong>.</p>
+      </div>
+      <div class="mapbox mt-m" data-map="{{mapEmbedUrl}}">
+        <svg viewBox="80 60 480 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#art-plan-base" width="640" height="520"/></svg>
+        <span class="mapbox__pin" aria-hidden="true"><svg><use href="#i-pin-solid"/></svg></span>
+        <span class="mapbox__label" aria-hidden="true">Anuj Properties</span>
+        <div class="mapbox__ui">
+          <button class="btn btn--light btn--sm" type="button" data-map-load><svg class="i" aria-hidden="true"><use href="#i-map"/></svg>Show Google map</button>
+          <a class="btn btn--call btn--sm" href="{{directionsUrl}}"><svg class="i" aria-hidden="true"><use href="#i-route"/></svg>Directions</a>
+        </div>
+      </div>
+      <p class="small muted mt-s">The map loads from Google only when you choose to show it.</p>
+      <figure class="contact-photo mt-l">
+        {{photo name="office-front" alt="The Anuj Properties office front: blue signboard over a steel gate, with the A-449 Parsvnath City Sector 8 house plate on the pillar" sizes="(min-width: 640px) 420px, 100vw"}}
+        <figcaption>Look for this gate and signboard at A-449, Parsvnath City.</figcaption>
+      </figure>
+    </div>
+    <div class="layout__aside">
+      {{> enquiry}}
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" aria-labelledby="hours-title">
+  <div class="container">
+    <div class="grid grid--2">
+      <div>
+        <h2 id="hours-title">Opening hours</h2>
+        <div class="table-wrap mt-s">
+          <table class="table">
+            <caption class="sr-only">Office opening hours</caption>
+            <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Every day, Monday to Sunday</th><td>10:30 am – 7:30 pm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted mt-s">Hours can change on public holidays. A quick call or WhatsApp before you come is a good idea.</p>
+      </div>
+      <div>
+        <h2>Before you get in touch</h2>
+        <ul class="checklist prose mt-s">
+          <li><strong>Buying or renting:</strong> your budget, preferred area, size and when you want to move.</li>
+          <li><strong>Selling or renting out:</strong> the plot or house number, block, size, and whether papers like the sale or conveyance deed are in your name.</li>
+          <li><strong>Paperwork help:</strong> photos or copies of the documents you already have.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
